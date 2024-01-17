@@ -1,0 +1,28 @@
+@import url("https://fonts.cdnfonts.com/css/forte");
+.home-section {
+  background: url("./rm183-wan-11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  height: calc(100vh - 50px);
+  position: relative;
+  text-transform: uppercase;
+}
+.intro {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #ced4da;
+}
+.smiley-face {
+  width: 15rem;
+  margin: 0 auto;
+  filter: drop-shadow(0px 0px 10px #ffd166);
+}
+
+.font-forte {
+  font-family: "Forte", sans-serif;
+  text-transform: capitalize;
+}

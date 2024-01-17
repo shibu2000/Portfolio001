@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400&family=Ubuntu&display=swap");
+
+header {
+  background-color: #6a52e6;
+  color: #c0c0c0;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+.nav-lists span {
+  padding: 0 0.5rem 0 0.5rem;
+  font-weight: bold;
+}
+
+.nav-lists span:hover {
+  text-decoration: underline;
+  text-shadow: rgba(255,162,0,0.9) 0px 0px 30px;
+}
