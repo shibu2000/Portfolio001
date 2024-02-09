@@ -3,10 +3,10 @@ import "../Stylesheets/Skills.css";
 
 const Skills = () => {
   return (
-    <section className="skills p-4 relative">
-      <h1 className="mb-4 uppercase text-white">Skills</h1>
+    <section id="skills" className="skills p-4 pt-20 overflow-hidden relative">
+      <h1 className="uppercase text-white mb-16">Skills</h1>
       {/* =========Part 1=========== */}
-      <div className="skill-container mt-8 flex justify-around flex-nowrap capitalize">
+      <div className="skill-container mt-8 flex justify-around md:flex-nowrap flex-wrap capitalize">
         <div className="skill_item">
           <div className="skill_details skill_detail-1">
             <h1 className="text-orange-400 text-2xl">JAVA</h1>

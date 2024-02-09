@@ -1,5 +1,5 @@
 .skills {
-  height: calc(100vh - 50px);
+  height: 100vh;
   background: url("./sketch-many-bulbs-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;

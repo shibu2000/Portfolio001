@@ -4,6 +4,9 @@
   font-family: "League Spartan", sans-serif;
   font-family: "Ubuntu", sans-serif;
 }
+html{
+  scroll-behavior:  smooth;
+}
 .absolute-center {
   position: absolute;
   top: 50%;

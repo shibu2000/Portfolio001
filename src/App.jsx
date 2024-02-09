@@ -12,16 +12,16 @@ const App = () => {
   return (
     <>
       <Header />
-      <Home />
+      {/* <Home />
       <Biography />
-      <Skills />
-      {/* <Routes>
+      <Skills /> */}
+      <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/bio" element={<Biography />} />
-        <Route path="/education" element={<Education />} />
+        <Route path="/biography" element={<Biography />} />
+        {/* <Route path="/education" element={<Education />} /> */}
         <Route path="/skills" element={<Skills />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes> */}
+        {/* <Route path="/projects" element={<Projects />} /> */}
+      </Routes>
     </>
   );
 };

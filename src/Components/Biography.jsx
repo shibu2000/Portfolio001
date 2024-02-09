@@ -3,7 +3,10 @@ import "../Stylesheets/Biography.css";
 
 const Biography = () => {
   return (
-    <section id="biography" className="biography p-3 flex md:flex-row flex-col">
+    <section
+      id="biography"
+      className="biography p-3 pt-20 flex md:flex-row flex-col"
+    >
       {/* ----------Biography Started----------------- */}
       <div className="flex-1 text-white left relative">
         <p>BIOGRAPHY</p>
@@ -16,38 +19,40 @@ const Biography = () => {
             the skills and knowledge necessary to make your project a success.
           </p>
           <table className="mt-4 about-me-table">
-            <tr>
-              <td>
-                <span>Birthday</span>: 12.04.2000
-              </td>
-              <td>
-                <span>Age</span>: 23
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span>Location</span>: Khirpai, West Bengal
-              </td>
-              <td>
-                <span>Interests</span>: Anime, Video Games
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span>Degree</span>: B.Tech
-              </td>
-              <td>
-                <span>College</span>: BBIT
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span>Mail</span>: shibudhara11@mail.com
-              </td>
-              <td>
-                <span>Phone</span>: +91 7407038247
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <span>Birthday</span>: 12.04.2000
+                </td>
+                <td>
+                  <span>Age</span>: {new Date().getFullYear() - 2000}
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>Location</span>: Khirpai, West Bengal
+                </td>
+                <td>
+                  <span>Interests</span>: Anime, Video Games
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>Degree</span>: B.Tech
+                </td>
+                <td>
+                  <span>College</span>: BBIT
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span>Mail</span>: shibudhara11@mail.com
+                </td>
+                <td>
+                  <span>Phone</span>: +91 7407038247
+                </td>
+              </tr>
+            </tbody>
           </table>
           <button className="bg-slate-500 py-2 px-4 mt-8 text-black font-bold rounded">
             Download CV
@@ -62,7 +67,7 @@ const Biography = () => {
             className="my-image"
           />
         </div>
-      </div> 
+      </div>
     </section>
   );
 };
