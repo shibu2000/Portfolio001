@@ -1,6 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/forte");
 .home-section {
-  background: url("./rm183-wan-11.jpg");
+  background: url("../assets/rm183-wan-11.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: contain;

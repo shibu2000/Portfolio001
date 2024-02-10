@@ -1,6 +1,6 @@
 .biography {
   height: 100vh;
-  background: url("./office-supplies.jpg");
+  background: url("../assets/office-supplies.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
