@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+.projects-section {
+  height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  background: url('../assets/background/network-3524352_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+.projects-section::after{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.project-item{
+    width: 17rem;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.9);
+}
+
+.project-item-img{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ======Responsive Media query */
+@media (max-width: 767px) {
+    .projects-section {
+      height: auto;
+    }
+  }

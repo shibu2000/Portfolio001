@@ -46,10 +46,10 @@ const Biography = () => {
               </tr>
               <tr>
                 <td>
-                  <span>Mail</span>: shibudhara11@mail.com
+                  <span>Mail</span>: shibudhara147@gmail.com
                 </td>
                 <td>
-                  <span>Phone</span>: +91 7407038247
+                  <span>Phone</span>: +91 9019248023
                 </td>
               </tr>
             </tbody>
