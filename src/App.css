@@ -4,8 +4,15 @@
   font-family: "League Spartan", sans-serif;
   font-family: "Ubuntu", sans-serif;
 }
-html{
-  scroll-behavior:  smooth;
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  background-color: #222233;
+  color: #AACCFF;
+}
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 .absolute-center {
   position: absolute;

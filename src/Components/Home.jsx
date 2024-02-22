@@ -4,7 +4,7 @@ import "../Stylesheets/Home.css";
 const Home = () => {
   return (
     <section id="home" className="home-section">
-      <div className="intro">
+      <div className="container intro">
         <img
           src="./smiley-face-png-from-pngfre-10.png"
           alt="smiley-face"

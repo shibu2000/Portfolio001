@@ -39,7 +39,7 @@ const Header = () => {
           <FaAngleLeft className="inline-block text-orange-500" />
           <RxSlash className="inline-block" />
           <FaAngleRight className="inline-block text-green-500" />
-          <Link to="/"> Shibu Dhara</Link>
+          <a href="#home"> Shibu Dhara</a>
         </div>
         <button onClick={() => (isMenu ? setIsMenu(false) : setIsMenu(true))}>
           <span className="md:hidden">
@@ -54,16 +54,16 @@ const Header = () => {
         ref={menuRef}
       >
         <span>
-          <Link to="/biography">Bio</Link>
+          <a href="#biography">Bio</a>
         </span>
         <span>
-          <Link to="/education">Education</Link>
+          <a href="#education">Education</a>
         </span>
         <span>
-          <Link to="/skills">Skills</Link>
+          <a href="#skills">Skills</a>
         </span>
         <span>
-          <Link to="/projects">Projects</Link>
+          <a href="#projects">Projects</a>
         </span>
       </div>
     </header>

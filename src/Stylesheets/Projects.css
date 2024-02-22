@@ -1,32 +1,38 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
 
 .projects-section {
   height: 100vh;
   font-family: "Ubuntu", sans-serif;
-  background: url('../assets/background/network-3524352_1280.jpg');
+  /* background: url("../assets/background/Project-img.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-
-}
-.projects-section::after{
-    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.project-item{
-    width: 17rem;
-    backdrop-filter: blur(3px);
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.9);
+.project-item {
+  width: 17rem;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.9);
 }
 
-.project-item-img{
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+.project-item-img {
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* ======Responsive Media query */
 @media (max-width: 767px) {
-    .projects-section {
-      height: auto;
-    }
+  .projects-section {
+    height: auto;
   }
+}
