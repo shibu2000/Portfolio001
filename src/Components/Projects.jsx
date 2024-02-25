@@ -3,9 +3,15 @@ import "../Stylesheets/Projects.css";
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects-section pt-20">
+    <section id="projects" className="projects-section">
+      <div className="heading flex justify-center items-center">
+        <div className="line-shape"></div>
+        <h1 className="uppercase text-center p-2 md:text-3xl text-orange-300 text-2xl">
+          projects
+        </h1>
+        <div className="line-shape" />
+      </div>
       <div className="container m-auto">
-        <h1 className="uppercase">Projects</h1>
         <div className="projects-items flex md:flex-row flex-col items-center mt-8">
           <div className="project-item border p-2 w-64 text-right mx-6 my-6">
             <img

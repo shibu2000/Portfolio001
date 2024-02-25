@@ -1,28 +1,52 @@
 @import url("https://fonts.cdnfonts.com/css/forte");
-.home-section {
-  /* background: url("../assets/background/Home-img.jpg"); */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+#home {
   height: 100vh;
-  position: relative;
-  text-transform: uppercase;
 }
-.intro {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 100%;
-  color: #ced4da;
-}
-.smiley-face {
-  width: 15rem;
-  margin: 0 auto;
+.my-img {
+  width: 20rem;
   -webkit-filter: drop-shadow(0px 0px 5px #455872);
   filter: drop-shadow(0px 0px 5px #455872);
+  transform: scaleX(-1);
 }
 
 .font-forte {
-  font-family: "Forte", sans-serif;
+  font-family: "Forte", sans-serif, Ubuntu;
   text-transform: capitalize;
+}
+
+.about-btn {
+  border: 2px solid #222233;
+  background: linear-gradient(rgb(51 65 85), rgb(51 65 85)) padding-box,
+    linear-gradient(
+        90deg,
+        rgb(64, 60, 116) 0%,
+        rgba(0, 169, 224, 1) 50%,
+        rgb(250, 113, 255) 100%
+      )
+      border-box;
+}
+.about-btn:hover {
+  border: 2px solid #0000;
+  transition: 0.3s ease-in;
+}
+
+.social-icons .icon {
+  position: relative;
+  top: 0;
+  transition: 0.2s ease;
+}
+.social-icons .icon:hover {
+  top: -0.2rem;
+  box-shadow: 0 0 2px #3b3b58;
+  filter: drop-shadow(0px 0px 5px #455872);
+}
+
+@media (max-width: 768px) {
+  #home {
+    height: auto;
+  }
+  .my-img {
+    max-width: 15rem;
+  }
 }

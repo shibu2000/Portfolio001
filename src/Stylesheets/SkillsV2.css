@@ -1,0 +1,26 @@
+#skills {
+  height: auto;
+}
+.logo img {
+  min-width: 50px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 9px  #000000);
+}
+.logo img:hover {
+  filter: drop-shadow(0 0 8px #000000);
+  transform: scale(1.03);
+  transition: 0.2s ease-in;
+}
+
+@media (max-width: 768px) {
+  #skills {
+    height: auto;
+  }
+  .logo{
+    margin-bottom: 0.5rem;
+  }
+  .logo img{
+    height: 100px;
+    width: 100px;
+  }
+}

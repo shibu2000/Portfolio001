@@ -7,6 +7,7 @@ import Education from "./Components/Education";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import "./App.css";
+import SkillsV2 from "./Components/SkillsV2";
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
       <Home />
       <Biography />
       <Education />
-      <Skills />
+      {/* <Skills /> */}
+      <SkillsV2 />
       <Projects />
       {/* <Routes>
         <Route path="/" element={<Home />} />

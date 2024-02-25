@@ -8,9 +8,10 @@ html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   background-color: #222233;
-  color: #AACCFF;
+  color: #aaccff;
 }
 section {
+  padding-top: 3.5rem;
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
@@ -19,4 +20,25 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.container {
+  padding: 0.5rem;
+}
+/* Horizontal line shape */
+.line-shape {
+  width: 400px;
+  border: 1px solid white;
+  box-shadow: rgb(255, 140, 0) 0px 0px 5px;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .line-shape {
+    width: 80px;
+  }
 }

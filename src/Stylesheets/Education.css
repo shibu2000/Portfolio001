@@ -4,26 +4,28 @@
   background-attachment: fixed;
   background-position: center;
 }
-.line-shape {
-  /* height: 1px; */
-  width: 400px;
-  border: 1px solid white;
-  box-shadow: rgb(255, 140, 0) 0px 0px 5px;
-}
+
 .edu-details {
   background-color: #1b1b29;
 }
 .edu-logo {
-  /* height: 100px;
-  width: 100px; */
   background-color: #151520;
 }
 .edu-group:hover .edu-details {
   box-shadow: 0 0 12px #334155;
 }
 
-@media (max-width: 768px){
-    .line-shape{
-        width: 80px;
-    }
+@media (max-width: 768px) {
+  .education-section {
+    height: auto;
+  }
+  .edu-logo {
+    background-color: #64748b;
+  }
+  .round-shape {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(235, 145, 112);
+    border: 2px solid #64748b;
+  }
 }

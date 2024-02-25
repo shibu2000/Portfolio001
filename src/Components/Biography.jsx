@@ -3,14 +3,17 @@ import "../Stylesheets/Biography.css";
 
 const Biography = () => {
   return (
-    <section
-      id="biography"
-      className="biography pt-20"
-    >
+    <section id="biography" className="biography">
+      <div className="heading flex justify-center items-center">
+        <div className="line-shape"></div>
+        <h1 className="uppercase text-center p-2 md:text-3xl text-orange-300 text-2xl">
+          biography
+        </h1>
+        <div className="line-shape" />
+      </div>
       {/* ----------Biography Started----------------- */}
       <div className="container m-auto flex md:flex-row flex-col">
         <div className="flex-1 left relative">
-          <p>BIOGRAPHY</p>
           <div className="innerLeft p-5">
             <h1 className="mb-4 text-4xl text-orange-400">ABOUT ME</h1>
             <p className="mb-4">I'm Shibu Dhara</p>
