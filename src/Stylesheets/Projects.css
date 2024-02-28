@@ -5,10 +5,8 @@
 * Browsers: last 4 version
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
-
 .projects-section {
-  height: 100vh;
+  /* height: 100vh; */
   font-family: "Ubuntu", sans-serif;
   /* background: url("../assets/background/Project-img.jpg"); */
   background-size: cover;
@@ -22,12 +20,16 @@
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
   -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.9);
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 5px 2px rgba(20, 19, 19, 0.9);
 }
 
 .project-item-img {
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+}
+.check-link {
+  color: #819cc2;
+  text-decoration: underline;
 }
 
 /* ======Responsive Media query */

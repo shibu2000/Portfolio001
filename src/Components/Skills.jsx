@@ -4,13 +4,8 @@ import "../Stylesheets/Skills.css";
 const Skills = () => {
   return (
     <section id="skills" className="skills overflow-hidden relative">
-      <div className="heading flex justify-center items-center">
-        <div className="line-shape"></div>
-        <h1 className="uppercase text-center p-2 md:text-3xl text-orange-300 text-2xl">
-          skills
-        </h1>
-        <div className="line-shape" />
-      </div>
+      <h1 className="uppercase p-2 md:text-3xl text-xl">skills</h1>
+
       <div className="container m-auto">
         {/* =========Part 1=========== */}
         <div className="skill-container mt-8 flex justify-around md:flex-nowrap flex-wrap capitalize">

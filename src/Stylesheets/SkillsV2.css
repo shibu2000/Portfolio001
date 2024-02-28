@@ -1,5 +1,8 @@
 #skills {
-  height: auto;
+  /* height: 100vh; */
+}
+.logo{
+  margin-bottom: 3rem;
 }
 .logo img {
   min-width: 50px;
@@ -17,7 +20,7 @@
     height: auto;
   }
   .logo{
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
   }
   .logo img{
     height: 100px;

@@ -8,6 +8,8 @@ import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import "./App.css";
 import SkillsV2 from "./Components/SkillsV2";
+import GetInTouch from "./Components/GetInTouch";
+import Footer from "./Components/Footer";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
       {/* <Skills /> */}
       <SkillsV2 />
       <Projects />
+      <GetInTouch />
+      <Footer />
       {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/biography" element={<Biography />} />

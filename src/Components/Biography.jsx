@@ -4,13 +4,9 @@ import "../Stylesheets/Biography.css";
 const Biography = () => {
   return (
     <section id="biography" className="biography">
-      <div className="heading flex justify-center items-center">
-        <div className="line-shape"></div>
-        <h1 className="uppercase text-center p-2 md:text-3xl text-orange-300 text-2xl">
-          biography
-        </h1>
-        <div className="line-shape" />
-      </div>
+      <h1 className="uppercase text-center p-2 md:text-3xl text-xl">
+        biography
+      </h1>
       {/* ----------Biography Started----------------- */}
       <div className="container m-auto flex md:flex-row flex-col">
         <div className="flex-1 left relative">

@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import "../Stylesheets/Header.css";
 import { FaAngleLeft, FaAngleRight, FaBars } from "react-icons/fa6";
 import { RxSlash } from "react-icons/rx";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenu, setIsMenu] = React.useState(false);
@@ -11,21 +10,21 @@ const Header = () => {
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
 
   useEffect(() => {
-    if (windowSize.current[0] <= 640) {
-      let handler = (e) => {
-        console.log("Handler");
-        if (!menuRef.current.contains(e.target)) {
-          setIsMenu(false);
-        }
-      };
-      document.addEventListener("mousedown", handler);
+    // if (windowSize.current[0] <= 768) {
+    //   let handler = (e) => {
+    //     console.log("Handler");
+    //     if (!menuRef.current.contains(e.target)) {
+    //       setIsMenu(false);
+    //     }
+    //   };
+    //   document.addEventListener("mousedown", handler);
 
-      return () => {
-        document.removeEventListener("mousedown", handler);
-      };
-    } else {
-      setIsMenu(true);
-    }
+    //   return () => {
+    //     document.removeEventListener("mousedown", handler);
+    //   };
+    // } else {
+    //   setIsMenu(true);
+    // }
   });
 
   return (
@@ -41,10 +40,11 @@ const Header = () => {
           <FaAngleRight className="inline-block text-green-500" />
           <a href="#home"> Shibu Dhara</a>
         </div>
-        <button onClick={() => (isMenu ? setIsMenu(false) : setIsMenu(true))}>
-          <span className="md:hidden">
-            <FaBars />
-          </span>
+        <button
+          className="md:hidden"
+          onClick={() => (isMenu ? setIsMenu(false) : setIsMenu(true))}
+        >
+          <FaBars />
         </button>
       </div>
       <div

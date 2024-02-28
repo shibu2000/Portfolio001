@@ -4,17 +4,13 @@ import { GiGraduateCap } from "react-icons/gi";
 
 const Education = () => {
   return (
-    <section id="education" className="education-section">
-      <div className="heading flex justify-center items-center">
-        <div className="line-shape"></div>
-        <h1 className="uppercase text-center p-2 md:text-3xl text-orange-300 text-2xl">
-          Education
-        </h1>
-        <div className="line-shape" />
-      </div>
+    <section id="education" className="education-section overflow-hidden">
+      <h1 className="uppercase text-center p-2 md:text-3xl text-xl">
+        Education
+      </h1>
       <div className="container m-auto md:mt-2 mt-6 md:space-y-5">
         {/* -------------------------------------------------------------------- */}
-        <div className="edu-group flex md:px-60 ">
+        <div className="edu-group lg:w-4/5 m-auto flex ">
           <div className="edu-logo p-1 border-r border-r-slate-700 rounded">
             <img
               src="./graduation-hat.png"
@@ -44,7 +40,7 @@ const Education = () => {
         </div>
         <div className="round-shape rounded-full md:hidden block" />
         {/* -------------------------------------------------------------------- */}
-        <div className="edu-group md:px-60 flex">
+        <div className="edu-group lg:w-4/5 m-auto flex">
           <div className="edu-logo p-1 border-r border-r-slate-700 rounded">
             <img
               src="./graduation-hat.png"
@@ -72,9 +68,9 @@ const Education = () => {
             </ul>
           </div>
         </div>
-        <div className="round-shape rounded-full md:hidden block" />
+        <div className="round-shape rounded-full lg:hidden block" />
         {/* -------------------------------------------------------------------- */}
-        <div className="edu-group md:px-60 flex">
+        <div className="edu-group lg:w-4/5 m-auto flex">
           <div className="edu-logo p-1 border-r border-r-slate-700 rounded">
             <img
               src="./graduation-hat.png"
@@ -103,9 +99,9 @@ const Education = () => {
             </ul>
           </div>
         </div>
-        <div className="round-shape rounded-full md:hidden block" />
+        <div className="round-shape rounded-full lg:hidden block" />
         {/* ---------------------------------------------------------------------*/}
-        <div className="edu-group md:last:px-60 flex">
+        <div className="edu-group lg:w-4/5 m-auto flex">
           <div className="edu-logo p-1 border-r border-r-slate-700 rounded">
             <img
               src="./graduation-hat.png"
