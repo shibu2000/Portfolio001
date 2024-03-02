@@ -23,33 +23,36 @@ const GetInTouch = ({ setPopMsg, setPopColor, setPopActive }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleFormSubmit = (event) => {
-    setIsClicked((c) => true);
     event.preventDefault();
 
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_REACT_APP_EMAIL_SERVICE_ID,
-        import.meta.env.VITE_REACT_APP_EMAIL_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_REACT_APP_EMAIL_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setName((n) => "");
-          setEmail((e) => "");
-          setMessage((m) => "");
-          setIsClicked((c) => false);
-          setPopMsg("SUCCESS");
-          setPopColor("bg-green-700");
-          setPopActive(true);
-        },
-        (error) => {
-          setIsClicked((c) => false);
-          setPopMsg("Failed! Try Again");
-          setPopColor("bg-orange-800");
-          setPopActive(true);
-        }
-      );
+    if (isName && isEmail && isMessage) {
+      setIsClicked((c) => true);
+
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_REACT_APP_EMAIL_SERVICE_ID,
+          import.meta.env.VITE_REACT_APP_EMAIL_TEMPLATE_ID,
+          form.current,
+          import.meta.env.VITE_REACT_APP_EMAIL_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            setName((n) => "");
+            setEmail((e) => "");
+            setMessage((m) => "");
+            setIsClicked((c) => false);
+            setPopMsg("SUCCESS");
+            setPopColor("bg-green-700");
+            setPopActive(true);
+          },
+          (error) => {
+            setIsClicked((c) => false);
+            setPopMsg("Failed! Try Again");
+            setPopColor("bg-orange-800");
+            setPopActive(true);
+          }
+        );
+    }
   };
 
   return (
