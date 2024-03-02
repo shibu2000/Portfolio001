@@ -1,10 +1,3 @@
-.education-section {
-  height: 100vh;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-
 .edu-details {
   background-color: #1b1b29;
 }
@@ -12,7 +5,15 @@
   background-color: #151520;
 }
 .edu-group:hover .edu-details {
+  -webkit-box-shadow: 0 0 12px #334155;
   box-shadow: 0 0 12px #334155;
+}
+
+.download-Btn {
+  background-color: #151520;
+}
+.download-Btn:active {
+  background-color: #0c0c11;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,44 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "name": "html5",
+      "file_name": "html5-logo.png"
+    },
+    {
+      "id": 2,
+      "name": "css3",
+      "file_name": "css-logo.png"
+    },
+    {
+      "id": 3,
+      "name": "javascript",
+      "file_name": "javascript-logo.png"
+    },
+    {
+      "id": 4,
+      "name": "javat",
+      "file_name": "java-logo.png"
+    },
+    {
+      "id": 5,
+      "name": "reactjs",
+      "file_name": "reactjs-logo.png"
+    },
+    {
+      "id": 6,
+      "name": "tailwindcss",
+      "file_name": "tailwindcss-logo.png"
+    },
+    {
+      "id": 7,
+      "name": "nodejs",
+      "file_name": "nodejs-logo.png"
+    },
+    {
+      "id": 8,
+      "name": "mysql",
+      "file_name": "mysql-logo.png"
+    }
+  ]
+}

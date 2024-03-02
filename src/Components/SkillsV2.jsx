@@ -1,36 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Stylesheets/SkillsV2.css";
+import data from "../skills_data.json";
+import { Fade } from "react-awesome-reveal";
 
 const SkillsV2 = () => {
   return (
-    <section id="skills">
-      <h1 className="uppercase text-center border-b mx-20 pb-4 md:text-3xl  text-xl">skills</h1>
-
-      <div className="container md:px-20 md:pt-15 pt-12 m-auto flex md:justify-center justify-around items-center md:space-x-8 flex-wrap px-8">
-        <div className="logo">
-          <img src="./logo/html5-logo.png" alt="html5" />
-        </div>
-        <div className="logo">
-          <img src="./logo/css-logo.png" alt="css3" />
-        </div>
-        <div className="logo">
-          <img src="./logo/javascript-logo.png" alt="javascript" />
-        </div>
-        <div className="logo">
-          <img src="./logo/java-logo.png" alt="java" />
-        </div>
-        <div className="logo">
-          <img src="./logo/reactjs-logo.png" alt="reactjs" />
-        </div>
-        <div className="logo">
-          <img src="./logo/tailwindcss-logo.png" alt="" />
-        </div>
-        <div className="logo">
-          <img src="./logo/nodejs-logo.png" alt="nodejs" />
-        </div>
-        <div className="logo">
-          <img src="./logo/mysql-logo.png" alt="mysql" />
-        </div>
+    <section id="skills" className="overflow-hidden">
+      <Fade direction="down" triggerOnce>
+        <h1 className="uppercase text-center mx-20 pb-4 md:text-3xl text-xl">
+          skills
+        </h1>
+      </Fade>
+      <div className="container py-5 m-auto lg:px-40 flex flex-wrap justify-center gap-5">
+        <Fade cascade damping={0.2} direction="up" triggerOnce className="w-1/5">
+          {data.skills.map((skill) => (
+            <img
+              key={skill.id}
+              src={`./skills_logo/${skill.file_name}`}
+              className="skill-logo h-full lg:h-52 p-2 shadow-sm shadow-slate-700"
+              alt={skill.name}
+            />
+          ))}
+        </Fade>
       </div>
     </section>
   );

@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 .projects-section {
   /* height: 100vh; */
   font-family: "Ubuntu", sans-serif;
@@ -17,10 +10,6 @@
 
 .project-item {
   width: 17rem;
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
-  -webkit-box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.9);
-  box-shadow: 0 0 5px 2px rgba(20, 19, 19, 0.9);
 }
 
 .project-item-img {

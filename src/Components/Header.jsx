@@ -1,72 +1,95 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "../Stylesheets/Header.css";
 import { FaAngleLeft, FaAngleRight, FaBars } from "react-icons/fa6";
 import { RxSlash } from "react-icons/rx";
+import { AiOutlineClose } from "react-icons/ai";
+import { Fade } from "react-awesome-reveal";
+
+const NavLinks = () => {
+  return (
+    <>
+      <a href="#biography">Bio</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#get-in-touch">Contact</a>
+    </>
+  );
+};
+
+const NavLinks02 = ({ toggleNavbar }) => {
+  return (
+    <Fade direction="right" cascade damping={0.1}>
+      <a href="#biography" onClick={toggleNavbar}>
+        Bio
+      </a>
+      <a href="#education " onClick={toggleNavbar}>
+        Education
+      </a>
+      <a href="#skills" onClick={toggleNavbar}>
+        Skills
+      </a>
+      <a href="#projects" onClick={toggleNavbar}>
+        Projects
+      </a>
+      <a href="#get-in-touch" onClick={toggleNavbar}>
+        Contact
+      </a>
+    </Fade>
+  );
+};
 
 const Header = () => {
-  const [isMenu, setIsMenu] = React.useState(false);
+  const [isMenu, setIsMenu] = useState(false);
 
-  const menuRef = useRef();
-  const windowSize = useRef([window.innerWidth, window.innerHeight]);
-
-  useEffect(() => {
-    // if (windowSize.current[0] <= 768) {
-    //   let handler = (e) => {
-    //     console.log("Handler");
-    //     if (!menuRef.current.contains(e.target)) {
-    //       setIsMenu(false);
-    //     }
-    //   };
-    //   document.addEventListener("mousedown", handler);
-
-    //   return () => {
-    //     document.removeEventListener("mousedown", handler);
-    //   };
-    // } else {
-    //   setIsMenu(true);
-    // }
-  });
+  const toggleNavbar = () => {
+    isMenu ? setIsMenu((m) => false) : setIsMenu((m) => true);
+  };
 
   return (
-    <header className="px-4 py-1 flex md:flex-row flex-col z-50 text-xl fixed overflow-hidden">
-      <div
-        className={`font-bold text-xl text-white flex-1 flex justify-around ${
-          isMenu ? " border-b" : "border-0"
-        } md:border-0 py-2`}
-      >
+    <nav className="lg:flex md:flex lg:flex-row md:flex-row flex-col justify-around items-center fixed top-0 w-full z-50 py-3">
+      {/* left-side */}
+      <div className={`font-bold text-xl text-white flex justify-around`}>
         <div>
           <FaAngleLeft className="inline-block text-orange-500" />
           <RxSlash className="inline-block" />
           <FaAngleRight className="inline-block text-green-500" />
-          <a href="#home"> Shibu Dhara</a>
+          <a
+            href="#home"
+            onClick={() => {
+              if (isMenu) {
+                setIsMenu((m) => false);
+              }
+            }}
+            className="text-decoration-none"
+          >
+            Shibu Dhara
+          </a>
         </div>
-        <button
-          className="md:hidden"
-          onClick={() => (isMenu ? setIsMenu(false) : setIsMenu(true))}
-        >
-          <FaBars />
+        <button className="lg:hidden md:hidden block" onClick={toggleNavbar}>
+          {isMenu ? <AiOutlineClose /> : <FaBars />}
         </button>
       </div>
+      {/* Right Side */}
       <div
-        className={`nav-lists py-2 flex-1 ${
-          isMenu ? "block" : "hidden"
-        } flex flex-col md:flex-row md:justify-end text-center`}
-        ref={menuRef}
+        className={`space-x-5 font-bold text-xl text-slate-50 items-center lg:block md:block hidden`}
       >
-        <span>
-          <a href="#biography">Bio</a>
-        </span>
-        <span>
-          <a href="#education">Education</a>
-        </span>
-        <span>
-          <a href="#skills">Skills</a>
-        </span>
-        <span>
-          <a href="#projects">Projects</a>
-        </span>
+        <NavLinks />
       </div>
-    </header>
+      {isMenu && (
+        <>
+          <hr className="my-4" />
+          <div
+            direction="right"
+            cascade
+            id="nav-items"
+            className={`lg:hidden md:hidden font-bold text-xl flex flex-col items-center overflow-hidden text-slate-50 gap-2`}
+          >
+            <NavLinks02 toggleNavbar={toggleNavbar} />
+          </div>
+        </>
+      )}
+    </nav>
   );
 };
 

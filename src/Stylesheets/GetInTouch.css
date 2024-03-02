@@ -1,12 +1,41 @@
-#get-in-touch form {
-  box-shadow: 0 0 10px #8888aa;
-}
 .formSubmitBtn {
   background-color: #191925 !important;
+  height: 2.5rem;
+  width: 6rem;
 }
 .formSubmitBtn:hover {
   background-color: #0f0f16 !important;
 }
 .formSubmitBtn:active {
   background-color: #191925 !important;
+}
+.spin {
+  -webkit-animation-name: spin;
+  animation-name: spin;
+  -webkit-animation-duration: 2000ms;
+  animation-duration: 2000ms;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
