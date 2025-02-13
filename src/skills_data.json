@@ -39,6 +39,16 @@
       "id": 8,
       "name": "mysql",
       "file_name": "mysql-logo.png"
+    },
+    {
+      "id": 9,
+      "name": "nextjs",
+      "file_name": "nextjs.png"
+    },
+    {
+      "id": 10,
+      "name": "postgress",
+      "file_name": "postgress.png"
     }
   ]
 }
